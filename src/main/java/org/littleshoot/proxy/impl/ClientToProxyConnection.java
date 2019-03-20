@@ -88,7 +88,7 @@ public class ClientToProxyConnection extends ProxyConnection<HttpRequest> {
     /**
      * Used for case-insensitive comparisons when checking direct proxy request.
      */
-    private static final Pattern HTTP_SCHEME = Pattern.compile("^http://.*", Pattern.CASE_INSENSITIVE);
+    private static final Pattern HTTP_SCHEME = Pattern.compile("^http://.*|^https://.*", Pattern.CASE_INSENSITIVE);
 
     /**
      * Keep track of all ProxyToServerConnections by host+port.
